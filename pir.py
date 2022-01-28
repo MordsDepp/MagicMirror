@@ -5,7 +5,7 @@ import time
 import RPi.GPIO as io
 import subprocess
 
-io.setup(io.BOARD)		#setup IO Pins in board mode
+io.setmode(io.BOARD)		#setup IO Pins in board mode
 TIMEOUT = 30			#seconds to screen blank
 BOOTDELAY = 40			#programm delay to ensure correct boot
 PIR_PIN = 22			#PIR signal
